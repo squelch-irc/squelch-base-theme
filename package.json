@@ -9,7 +9,8 @@
   "style": "dist/style.css",
   "author": "Rahat Ahmed",
   "scripts": {
-    "prebuild": "rimraf dist",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
     "build": "node-sass --importer node_modules/npm-sass/lib/importer.js --source-map-embed --source-map-contents src/style.scss dist/style.css",
     "watch": "npm run build -- -w",
     "dev": "npm run watch",
