@@ -47,6 +47,7 @@
         overflow-x: hidden;
         overflow-y: auto;
         font-size: 14px;
+        padding-top: 25px; // TODO: set to topic bar height
         ul {
             margin: 0;
             padding: 0;
@@ -90,6 +91,26 @@
     }
     .message-contents {
         flex: 1 0;
+    }
+}
+
+.topic-bar {
+    height: 25px; // TODO: use a variable
+    width: 100%;
+    padding: 2px 4px;
+    vertical-align: center;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: #eee;
+    position: absolute;
+    opacity: .9;
+    -webkit-user-select: text;
+    z-index: 1;
+
+    &:hover {
+        white-space: normal;
+        height: auto;
     }
 }
 
