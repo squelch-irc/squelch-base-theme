@@ -1,3 +1,4 @@
+@import 'variables.scss';
 @import 'photon/sass/photon';
 
 /******************** Sidebar ********************/
@@ -24,7 +25,7 @@
 }
 
 .tree-view_item.active {
-	background-color: #dcdfe1;
+	background-color: $nav-active-color;
 }
 
 .nav-group-title {
@@ -47,7 +48,7 @@
         overflow-x: hidden;
         overflow-y: auto;
         font-size: 14px;
-        padding-top: 25px; // TODO: set to topic bar height
+        padding-top: $topic-bar-height;
         ul {
             margin: 0;
             padding: 0;
@@ -64,7 +65,7 @@
         flex-shrink: 0;
         height: 25px;
         border: none;
-        border-top: 1px solid #ddd;
+        border-top: 1px solid $border-color;
 
         input {
             box-sizing: border-box;
@@ -95,16 +96,16 @@
 }
 
 .topic-bar {
-    height: 25px; // TODO: use a variable
+    height: $topic-bar-height;
     width: 100%;
     padding: 2px 4px;
     vertical-align: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid $border-color;
     white-space: nowrap;
     overflow: hidden;
-    background-color: #eee;
+    background-color: $topic-bar-bg-color;
     position: absolute;
-    opacity: .9;
+    opacity: $topic-bar-opacity;
     -webkit-user-select: text;
     z-index: 1;
 
