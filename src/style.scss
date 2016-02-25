@@ -48,7 +48,7 @@
         overflow-x: hidden;
         overflow-y: auto;
         font-size: 14px;
-        padding-top: $topic-bar-height;
+
         ul {
             margin: 0;
             padding: 0;
@@ -112,6 +112,10 @@
     &:hover {
         white-space: normal;
         height: auto;
+    }
+
+    & ~ .message-container {
+        padding-top: $topic-bar-height;
     }
 }
 
