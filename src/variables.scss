@@ -1,8 +1,10 @@
 // Colors
 $border-color: #ddd !default;
 
-$nav-active-color: #dcdfe1 !default;
+$gray-color: #333 !default;
 
+$nav-active-color: #dcdfe1 !default;
+$nav-inactive-color: lighten($gray-color, 40%) !default;
 
 // Topic Bar
 $topic-bar-height: 25px !default;
