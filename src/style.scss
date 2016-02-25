@@ -25,12 +25,21 @@
     .nav-group-item {
         padding-left: 36px;
     }
-    :not(.joined) {
+}
+
+.channel {
+    &:not(.joined) {
         color: $nav-inactive-color;
     }
 }
 
-.tree-view_item.active {
+.server {
+    &:not(.connected) {
+        color: $nav-inactive-color;
+    }
+}
+
+.tree-view_item.active, .tree-view_item:active {
 	background-color: $nav-active-color;
 }
 
