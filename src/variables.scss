@@ -1,10 +1,32 @@
 // Colors
-$border-color: #ddd !default;
+$border-color:          #ddd !default;
 
-$gray-color: #333 !default;
+$gray-color:            #333 !default;
 
-$nav-active-color: #dcdfe1 !default;
-$nav-inactive-color: lighten($gray-color, 40%) !default;
+$nav-active-color:      #dcdfe1 !default;
+$nav-inactive-color:    lighten($gray-color, 40%) !default;
+
+// Nick Colors
+$nick-color-saturation: 70;
+$nick-color-brightness: 50;
+$nick-color-count: 16;
+
+$nick-color-1:          hsl(360 / $nick-color-count * 0, $nick-color-saturation, $nick-color-brightness) !default;
+$nick-color-2:          hsl(360 / $nick-color-count * 1, $nick-color-saturation, $nick-color-brightness) !default;
+$nick-color-3:          hsl(360 / $nick-color-count * 2, $nick-color-saturation, $nick-color-brightness) !default;
+$nick-color-4:          hsl(360 / $nick-color-count * 3, $nick-color-saturation, $nick-color-brightness) !default;
+$nick-color-5:          hsl(360 / $nick-color-count * 4, $nick-color-saturation, $nick-color-brightness) !default;
+$nick-color-6:          hsl(360 / $nick-color-count * 5, $nick-color-saturation, $nick-color-brightness) !default;
+$nick-color-7:          hsl(360 / $nick-color-count * 6, $nick-color-saturation, $nick-color-brightness) !default;
+$nick-color-8:          hsl(360 / $nick-color-count * 7, $nick-color-saturation, $nick-color-brightness) !default;
+$nick-color-9:          hsl(360 / $nick-color-count * 8, $nick-color-saturation, $nick-color-brightness) !default;
+$nick-color-10:         hsl(360 / $nick-color-count * 9, $nick-color-saturation, $nick-color-brightness) !default;
+$nick-color-11:         hsl(360 / $nick-color-count * 10, $nick-color-saturation, $nick-color-brightness) !default;
+$nick-color-12:         hsl(360 / $nick-color-count * 11, $nick-color-saturation, $nick-color-brightness) !default;
+$nick-color-13:         hsl(360 / $nick-color-count * 12, $nick-color-saturation, $nick-color-brightness) !default;
+$nick-color-14:         hsl(360 / $nick-color-count * 13, $nick-color-saturation, $nick-color-brightness) !default;
+$nick-color-15:         hsl(360 / $nick-color-count * 14, $nick-color-saturation, $nick-color-brightness) !default;
+$nick-color-16:         hsl(360 / $nick-color-count * 15, $nick-color-saturation, $nick-color-brightness) !default;
 
 // Topic Bar
 $topic-bar-height: 25px !default;
