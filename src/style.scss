@@ -27,16 +27,23 @@
     }
 }
 
+// Grey out non-joined channels
 .channel {
     &:not(.joined) {
         color: $nav-inactive-color;
     }
 }
 
+// Grey out disconnected servers
 .server {
     &:not(.connected) {
         color: $nav-inactive-color;
     }
+}
+
+// Grey out user queries on disconnected servers
+.tree-view_item:not(.connected) + .tree-view_children .user{
+    color: $nav-inactive-color;
 }
 
 .tree-view_item.active, .tree-view_item:active {
