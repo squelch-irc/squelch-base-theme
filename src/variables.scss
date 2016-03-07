@@ -2,9 +2,12 @@
 $border-color:          #ddd !default;
 
 $gray-color:            #333 !default;
+$light-gray-color:      lighten($gray-color, 40%) !default;
+
+$error-color:           #E00000 !default;
 
 $nav-active-color:      #dcdfe1 !default;
-$nav-inactive-color:    lighten($gray-color, 40%) !default;
+$nav-inactive-color:    $light-gray-color;
 
 // Nick Colors
 $nick-color-saturation: 70;
@@ -32,3 +35,7 @@ $nick-color-16:         hsl(360 / $nick-color-count * 15, $nick-color-saturation
 $topic-bar-height: 25px !default;
 $topic-bar-bg-color: #EEE !default;
 $topic-bar-opacity: .9 !default;
+
+
+// Messages
+$info-msg-opacity: .6 !default;

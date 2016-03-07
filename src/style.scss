@@ -231,3 +231,93 @@
     }
 
 }
+
+/******************** Message Formats ********************/
+
+.message {
+    .action .nick:before {
+        content: '•\A';
+    }
+
+    .message-error{
+        color: #E00000;
+        &:before {
+            content: 'Error:\A';
+        }
+    }
+
+    .invite:before {
+        content: '»\A';
+    }
+
+    .join {
+        opacity: $info-msg-opacity;
+        &:before {
+            content: '→\A';
+        }
+    }
+
+    .kick {
+        opacity: $info-msg-opacity;
+    }
+
+    .motd:before {
+        content: 'MOTD:\A';
+    }
+
+    .msg .nick:after {
+        content: ':';
+    }
+
+    .nick-change {
+        opacity: $info-msg-opacity;
+    }
+
+    .notice:before {
+        content: '»\A';
+    }
+
+    .notice .nick:after {
+        content: ':';
+    }
+
+    .part {
+        opacity: $info-msg-opacity;
+        &:before {
+            content: '←\A';
+        }
+    }
+    .quit {
+        opacity: $info-msg-opacity;
+        &:before {
+            content: '←\A';
+        }
+    }
+
+    .timestamp:before {
+        content: '[';
+    }
+
+    .timestamp:after {
+        content: ']';
+    }
+
+    .topic {
+        opacity: $info-msg-opacity;
+        &:before {
+            content: 'Topic is\A';
+        }
+    }
+
+    .topic-who {
+        opacity: $info-msg-opacity;
+    }
+
+    .raw {
+        opacity: $info-msg-opacity;
+    }
+
+    .message-info {
+        opacity: $info-msg-opacity;
+    }
+}
