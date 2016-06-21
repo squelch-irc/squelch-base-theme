@@ -250,15 +250,11 @@
     }
 
     // Make less important info messages semi-transparent
-    .join,
-    .kick,
-    .nick-change,
-    .part,
-    .quit,
-    .topic,
-    .topic-who,
-    .raw,
     .message-info {
         opacity: $info-msg-opacity;
+    }
+
+    pre.motd-text {
+        margin: 0;
     }
 }
