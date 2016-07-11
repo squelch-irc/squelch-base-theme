@@ -245,6 +245,8 @@
 /******************** Message Formats ********************/
 
 .message {
+    white-space: pre-wrap;
+    
     .message-error{
         color: #E00000;
     }
@@ -252,6 +254,12 @@
     // Make less important info messages semi-transparent
     .message-info {
         opacity: $info-msg-opacity;
+
+        .help-list-item {
+            display: inline-block;
+            margin-right: 25px;
+            width: 75px;
+        }
     }
 
     pre.motd-text {
