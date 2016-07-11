@@ -1,7 +1,7 @@
 {
   "name": "squelch-base-theme",
   "description": "The base theme for Squelch IRC Client.",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "license": "MIT",
   "repository": "https://github.com/squelch-irc/squelch-base-theme",
   "main": "src/style.scss",
